@@ -17,7 +17,7 @@ Looks great both with dark and white terminals.
 [**Oh My Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 ```sh
 mkdir -p ~/.oh-my-zsh/custom/themes/
-wget -xqO ~/.oh-my-zsh/custom/themes/lavender.zsh-theme https://git.io/fxsnn
+wget -xqO ~/.oh-my-zsh/custom/themes/lavender.zsh-theme https://git.io/fxscf
 sed -i.bak 's/^[[:space:]]*ZSH_THEME=.*/ZSH_THEME="lavender"/' ~/.zshrc
 source ~/.zshrc 
 ```
