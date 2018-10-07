@@ -5,7 +5,7 @@
 Minimalistic Lavender theme does not have any visual noise. Displays only the necessary information: current user, hostname, working directory, git branch if exists.
 Looks great both with dark and white terminals.
 
-![Lavender Terminal Theme](https://user-images.githubusercontent.com/11278181/30273006-cd4f5b44-96ff-11e7-9519-de71cae726e6.png)
+![Lavender Terminal Theme](https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/screenshot.jpg)
 
 ## Installation 
 
