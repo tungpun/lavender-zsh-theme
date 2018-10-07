@@ -56,3 +56,5 @@ aphrodite_get_prompt() {
 export GREP_COLOR='1;31'
 
 PROMPT='$(aphrodite_get_prompt)'
+
+LSCOLORS='exfxcxdxbxGxDxabagacad'
