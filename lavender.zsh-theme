@@ -2,10 +2,9 @@
 
 # ------------------------------------------------------------------------------
 #
-# Aphrodite Terminal Theme
+# Lavender Terminal Theme
 #
-# Author: Sergei Kolesnikov
-# https://github.com/win0err/aphrodite-terminal-theme
+# https://github.com/tungpun/lavender-zsh-theme
 #
 # ------------------------------------------------------------------------------
 
