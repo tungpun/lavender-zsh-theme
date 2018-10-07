@@ -22,6 +22,17 @@ sed -i.bak 's/^[[:space:]]*ZSH_THEME=.*/ZSH_THEME="lavender"/' ~/.zshrc
 source ~/.zshrc 
 ```
 
+### Plugins
+
+This theme should be used with these plugins:
+
+**~/.zshrc**
+```
+...
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+...
+```
+
 ### Bash
 
 Bash support will be added later.
