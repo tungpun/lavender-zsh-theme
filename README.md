@@ -36,10 +36,7 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ...
 ```
 
-### Bash
-
-Bash support will be added later.
-
 ---
 _Developed by [Sergei Kolesnikov](https://github.com/win0err)_
+
 _Developed by [Tung Pun](https://github.com/tungpun)_
