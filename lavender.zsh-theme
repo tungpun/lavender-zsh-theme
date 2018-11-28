@@ -40,19 +40,6 @@ function get_time_stamp {
     echo "%*"
 }
 
-function get_space {
-    local str=$1$2
-    local zero='%([BSUbfksu]|([FB]|){*})'
-    local len=${#${(S%%)str//$~zero/}}
-    local size=$(( $COLUMNS - $len - 1 ))
-    local space=""
-    while [[ $size -gt 0 ]]; do
-        space="$space "
-        let size=$size-1
-    done
-    echo $space
-}
-
 lavender_get_prompt() {
 
 	# 256-colors check (will be used later): tput colors
@@ -61,13 +48,9 @@ lavender_get_prompt() {
 	local host="%F{12}%m%f"
 	local in="%F{8}:%f"
 	local dir="%F{3}%~"
-	local time="$(get_time_stamp)"
 	local left_prompt="$user$at$host$in$dir$(lavender_get_current_branch)"
-	local right_prompt="%F{12}[$time]%f"
 
 	echo -n "$left_prompt"
-	echo -n "$(get_space $left_prompt $right_prompt)"
-	echo -n "$right_prompt"
 	echo -n "\n"
 	echo -n "$(lavender_get_welcome_symbol)%{$reset_color%} " # $ or #
 }
@@ -75,5 +58,8 @@ lavender_get_prompt() {
 export GREP_COLOR='1;31'
 
 PROMPT='$(lavender_get_prompt)'
+
+local time="$(get_time_stamp)"
+RPROMPT='%F{12}[$time]%f'
 
 LSCOLORS='exfxcxdxbxGxDxabagacad'
