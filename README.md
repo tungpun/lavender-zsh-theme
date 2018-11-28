@@ -14,7 +14,11 @@ Looks great both with dark and white terminals.
 - wget and git installed
 
 ### Zsh
-[**Oh My Zsh**](https://github.com/robbyrussell/oh-my-zsh)
+
+* Install  [**Oh My Zsh**](https://github.com/robbyrussell/oh-my-zsh)
+
+* Install the theme
+
 ```sh
 mkdir -p ~/.oh-my-zsh/custom/themes/
 wget -xqO ~/.oh-my-zsh/custom/themes/lavender.zsh-theme https://git.io/fxscf
@@ -36,10 +40,7 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ...
 ```
 
-### Bash
-
-Bash support will be added later.
-
 ---
 _Developed by [Sergei Kolesnikov](https://github.com/win0err)_
+
 _Developed by [Tung Pun](https://github.com/tungpun)_
