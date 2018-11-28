@@ -62,7 +62,7 @@ lavender_get_prompt() {
 	local in="%F{8}:%f"
 	local dir="%F{3}%~"
 	local time="$(get_time_stamp)"
-	local left_prompt="\n$user$at$host$in$dir$(lavender_get_current_branch)"
+	local left_prompt="$user$at$host$in$dir$(lavender_get_current_branch)"
 	local right_prompt="%F{12}[$time]%f"
 
 	echo -n "$left_prompt"
