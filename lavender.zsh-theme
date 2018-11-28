@@ -10,8 +10,8 @@
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" %F{10}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%f"
-ZSH_THEME_GIT_PROMPT_DIRTY="%f%F{11}..."
-ZSH_THEME_GIT_PROMPT_CLEAN=""
+ZSH_THEME_GIT_PROMPT_DIRTY="%f%F{11} \u2718"
+ZSH_THEME_GIT_PROMPT_CLEAN="%f%F{10} \u2714"
 
 lavender_get_welcome_symbol() {
 
@@ -30,8 +30,8 @@ lavender_get_current_branch() {
 	
 	if [ -n "$branch" ]; then
 		echo -n $ZSH_THEME_GIT_PROMPT_PREFIX
-		echo -n $(parse_git_dirty)
 		echo -n "‹${branch}›"
+		echo -n $(parse_git_dirty)
 		echo -n $ZSH_THEME_GIT_PROMPT_SUFFIX
 	fi
 }
