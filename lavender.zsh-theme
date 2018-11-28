@@ -13,7 +13,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%f"
 ZSH_THEME_GIT_PROMPT_DIRTY="%f%F{11}..."
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-aphrodite_get_welcome_symbol() {
+lavender_get_welcome_symbol() {
 
 	echo -n "%(?..%F{1})"
 	
@@ -24,9 +24,7 @@ aphrodite_get_welcome_symbol() {
 	echo -n "%(?..%f)"
 }
 
-# local aphrodite_get_time="%F{grey}[%*]%f"
-
-aphrodite_get_current_branch() {
+lavender_get_current_branch() {
 
 	local branch=$(git_current_branch)
 	
@@ -38,22 +36,44 @@ aphrodite_get_current_branch() {
 	fi
 }
 
-aphrodite_get_prompt() {
+function get_time_stamp {
+    echo "%*"
+}
+
+function get_space {
+    local str=$1$2
+    local zero='%([BSUbfksu]|([FB]|){*})'
+    local len=${#${(S%%)str//$~zero/}}
+    local size=$(( $COLUMNS - $len - 1 ))
+    local space=""
+    while [[ $size -gt 0 ]]; do
+        space="$space "
+        let size=$size-1
+    done
+    echo $space
+}
+
+lavender_get_prompt() {
 
 	# 256-colors check (will be used later): tput colors
-	
-	echo -n "%F{6}%n%f" # User
-	echo -n "%F{8}@%f" # at
-	echo -n "%F{12}%m%f" # Host
-	echo -n "%F{8}:%f" # in 
-	echo -n "%F{3}%~%{$reset_color%}" # Dir
-	echo -n "$(aphrodite_get_current_branch)" # Git branch
+	local user="%F{6}%n%f"
+	local at="%F{8}@%f"
+	local host="%F{12}%m%f"
+	local in="%F{8}:%f"
+	local dir="%F{3}%~"
+	local time="$(get_time_stamp)"
+	local left_prompt="\n$user$at$host$in$dir$(lavender_get_current_branch)"
+	local right_prompt="%F{12}[$time]%f"
+
+	echo -n "$left_prompt"
+	echo -n "$(get_space $left_prompt $right_prompt)"
+	echo -n "$right_prompt"
 	echo -n "\n"
-	echo -n "$(aphrodite_get_welcome_symbol)%{$reset_color%} " # $ or #
+	echo -n "$(lavender_get_welcome_symbol)%{$reset_color%} " # $ or #
 }
 
 export GREP_COLOR='1;31'
 
-PROMPT='$(aphrodite_get_prompt)'
+PROMPT='$(lavender_get_prompt)'
 
 LSCOLORS='exfxcxdxbxGxDxabagacad'
