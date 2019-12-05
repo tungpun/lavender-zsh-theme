@@ -16,6 +16,8 @@ Looks great both with dark and white terminals.
 
 ### Scripts:
 
+* For Ubuntu LTS
+
 Run `INSTALL.sh`
 
 ### Manually:
