@@ -10,10 +10,17 @@ Looks great both with dark and white terminals.
 ## Installation 
 
 ### Requirements
-- UNIX-like OS (Linux, macOS, BSD)
-- wget and git installed
 
-### Zsh
+* UNIX-like OS (Linux, macOS, BSD)
+* wget and git installed
+
+### Scripts:
+
+Run `INSTALL.sh`
+
+### Manually:
+
+#### Zsh
 
 * Install  [**Oh My Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 
@@ -26,7 +33,7 @@ sed -i.bak 's/^[[:space:]]*ZSH_THEME=.*/ZSH_THEME="lavender"/' ~/.zshrc
 source ~/.zshrc 
 ```
 
-### Plugins
+#### Plugins
 
 This theme should be used with these plugins:
 
