@@ -16,8 +16,13 @@ Looks great both with dark and white terminals.
 
 ### Scripts:
 
-* For Ubuntu LTS:
-Run `INSTALL.sh`
+* For Ubuntu LTS: run `INSTALL.sh`
+
+```
+wget https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/INSTALL.sh
+chmod +x INSTALL.sh
+./INSTALL.sh
+```
 
 ### Manually:
 
