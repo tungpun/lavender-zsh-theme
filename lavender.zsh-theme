@@ -59,7 +59,7 @@ export GREP_COLOR='1;31'
 
 PROMPT='$(lavender_get_prompt)'
 
-local time="$(get_time_stamp)"
-RPROMPT='%F{12}[$time]%f'
+# local time="$(get_time_stamp)"
+# RPROMPT='%F{12}[$time]%f'
 
 LSCOLORS='exfxcxdxbxGxDxabagacad'
