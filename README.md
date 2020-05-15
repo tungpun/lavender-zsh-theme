@@ -39,6 +39,12 @@ sed -i.bak 's/^[[:space:]]*ZSH_THEME=.*/ZSH_THEME="lavender"/' ~/.zshrc
 source ~/.zshrc 
 ```
 
+#### curl
+
+```sh
+curl -o ~/.curlrc https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/.curlrc
+```
+
 #### Plugins
 
 This theme should be used with these plugins:
