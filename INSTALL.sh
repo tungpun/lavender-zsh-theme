@@ -1,4 +1,7 @@
 sudo apt-get install -y zsh wget curl git
+if [[ ! -e ~/.zshrc ]]; then
+    touch ~/.zshrc
+fi
 curl -Lo omz_install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sed -i.bak 's/^[[:space:]]*exec zsh -l//' omz_install.sh
 chmod +x omz_install.sh
