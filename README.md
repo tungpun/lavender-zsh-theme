@@ -27,7 +27,7 @@ chmod +x INSTALL.sh
 > one line:
 
 ```
-wget https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/INSTALL.sh; chmod +x INSTALL.sh; ./INSTALL.sh
+wget https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/INSTALL.sh && chmod +x INSTALL.sh && ./INSTALL.sh
 ```
 
 
