@@ -19,18 +19,14 @@ Looks great both with dark and white terminals.
 * For Ubuntu LTS
 
 ```
-cd /tmp
-wget https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/install/install-zsh-lavender-ubuntu.sh
-chmod +x install-zsh-lavender-ubuntu.sh
-./install-zsh-lavender-ubuntu.sh
-```
-
-> one line:
-
-```
 cd /tmp && wget https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/install/install-zsh-lavender-ubuntu.sh && chmod +x install-zsh-lavender-ubuntu.sh && ./install-zsh-lavender-ubuntu.sh
 ```
 
+* For Amazon's AMI
+
+```
+cd /tmp && wget https://raw.githubusercontent.com/tungpun/lavender-zsh-theme/master/install/install-zsh-lavender-ami.sh && chmod +x install-zsh-lavender-ami.sh && ./install-zsh-lavender-ami.sh
+```
 
 ### Manually:
 
