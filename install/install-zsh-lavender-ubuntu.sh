@@ -1,4 +1,4 @@
-sudo apt-get install -y zsh wget curl git
+sudo apt install -y zsh wget curl git
 if [[ ! -e ~/.zshrc ]]; then
     touch ~/.zshrc
 fi
