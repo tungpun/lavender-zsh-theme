@@ -1,3 +1,4 @@
+sudo apt update
 sudo apt install -y zsh wget curl git
 if [[ ! -e ~/.zshrc ]]; then
     touch ~/.zshrc
